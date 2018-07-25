@@ -1,0 +1,15 @@
+.Active-Orders{
+    .new-order{
+        display:inline-block;
+        width: 23%;
+        border: 2px solid $light-yellow;
+        border-radius: 5px;
+        margin: 20px 1%;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: left;
+        
+    }
+}

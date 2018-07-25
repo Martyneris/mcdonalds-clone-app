@@ -1,0 +1,45 @@
+.Checkout{
+    h1{
+        margin-top: 30px;
+        font-size: 26px;
+        color: $dark-red;
+    }
+    a{
+        float:left;
+        margin-left: 10%;
+        font-weight: 600;
+        color: $dark-red;
+        font-size: 22px;
+    }
+    form{
+        margin: 30px auto;
+        width: 40%;
+        border: 1px solid $light-yellow;
+        border-radius: 8px;
+    }
+    input{
+        display: block;
+        width: 80%;
+        margin: auto;
+        line-height: 30px;
+        font-size: 20px;
+        margin-top: 20px;
+        border: 1px solid $light-yellow;
+        border-radius: 5px;
+        &:focus{
+            outline-color: $light-yellow;
+        }
+    }
+    button{
+        line-height: 30px;
+        border: none;
+        width: 80%;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        margin: 20px auto;
+        background: $dark-red;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,49 @@
+.Home{
+    overflow-x: hidden;
+    img {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+    }
+    .top-line, .bottom-line{
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        transition: 1s;
+        background: $light-red;
+    }
+    .top-line{
+        left:0;
+        top:0;
+        transform: translateX(-100%);
+        animation: topline .8s ease-out forwards;
+        animation-delay: 0.8s,
+    }
+    .bottom-line{
+        left:0;
+        bottom:0;
+        transform: translateX(100%);
+        animation: bottomline .8s ease-out forwards;
+        animation-delay: 0.8s, 
+    }
+}
+
+@keyframes topline {
+    0%{
+       transform: translateX(-100%);
+    }
+    100%{
+       transform: translateX(0);
+    }
+}
+
+@keyframes bottomline {
+     0%{
+       transform: translateX(100%);
+    }
+    100%{
+       transform: translateX(0);
+    }
+}

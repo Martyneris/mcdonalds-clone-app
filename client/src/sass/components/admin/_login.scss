@@ -1,0 +1,43 @@
+.Login{
+    h1{
+        font-size: 26px;
+        margin: 30px auto;
+    }
+    form{
+        width: 40%;
+        margin: auto;
+    }
+    input{
+        width: 100%;
+        border: 1px solid $light-red;
+        display:block;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 15px;
+    }button{
+        border: 1px solid $light-red;
+        display: block;
+        background: #fff;
+        line-height: 30px;
+        margin-top: 45px;
+        border-radius: 5px;
+        font-size: 20px;
+        width: 100%;
+        user-select: none;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            border: 1px solid $light-yellow;
+            background: $light-red;
+        }
+        &:focus{
+            outline:none;
+        }
+    }
+    span{
+        margin-top: 20px;
+        display: block;
+        font-size: 20px;
+
+    }
+}
