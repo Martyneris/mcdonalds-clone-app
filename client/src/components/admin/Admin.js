@@ -14,7 +14,7 @@ import io from 'socket.io-client';
 class Admin extends React.Component {
     constructor(props){
         super(props)
-        this.socket = io('http://212.24.110.164:'+process.env.PORT)
+        this.socket = io('http://212.24.110.164:9000')
     };
     componentDidMount(){
         this.socket.on('neworder', (order)=>{
